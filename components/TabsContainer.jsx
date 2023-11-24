@@ -2,9 +2,24 @@
 
 import { useState } from "react";
 import CardsList from "./CardsList";
+import Form from "./Form";
 
 const TabsContainer = () => {
   const [tabId, setTabId] = useState(1);
+  const [posts, setPosts] = useState([
+    {id: 0, post: 'Новобранец', salary: 50, description: "от 10 lvl"},
+    {id: 1, post: 'Новобранец', salary: 50, description: "от 11 lvl"},
+    {id: 2, post: 'Новобранец', salary: 50, description: "от 12 lvl"},
+    {id: 3, post: 'Новобранец', salary: 50, description: "от 13 lvl"},
+    {id: 4, post: 'Новобранец', salary: 50, description: "от 14 lvl"},
+    {id: 5, post: 'Новобранец', salary: 50, description: "от 15 lvl"},
+    {id: 6, post: 'Новобранец', salary: 50, description: "от 16 lvl"},
+    {id: 7, post: 'Новобранец', salary: 50, description: "от 17 lvl"},
+    {id: 8, post: 'Новобранец', salary: 50, description: "от 18 lvl"},
+    {id: 9, post: 'Новобранец', salary: 50, description: "от 19 lvl"},
+    {id: 10, post: 'Новобранец', salary: 50, description: "от 20 lvl"},
+  ])
+  
 
   return (
     <section className="bg-black1 min-h-[840px] max-h-[840px] max-w-5xl w-full border-2 border-borderGrey rounded-lg px-6 pt-6 pb-5">
@@ -56,8 +71,9 @@ const TabsContainer = () => {
       </nav>
       {tabId === 0 && <div></div>}
       {tabId === 1 && 
-        <div className="border-2 border-t-0 border-borderGrey px-10 pb-10 pt-6">
-            <CardsList />
+        <div className="border-2 border-t-0 border-borderGrey px-10 pb-10 pt-6 flex gap-4 justify-between">
+            <CardsList posts={posts} changePosts={setPosts} />
+            <Form />
         </div>
       }
       {tabId === 2 && <div></div>}

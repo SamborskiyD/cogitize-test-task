@@ -14,3 +14,7 @@
 .violet-button{
     @apply w-full bg-violet border-2 border-borderGrey text-white p-3.5 mt-2 rounded-lg text-sm font-semibold shadow-[0_4px_40px_0px_rgba(104,102,234,0.24)]; 
 }
+
+.checkbox {
+    @apply relative shrink-0 cursor-pointer appearance-none w-6 h-6 border-2 border-borderGrey rounded bg-black1 outline-none checked:border-violet checked:bg-[url(../public/check.svg)]
+}
