@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+.no-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.violet-button{
+    @apply w-full bg-violet border-2 border-borderGrey text-white p-3.5 mt-2 rounded-lg text-sm font-semibold shadow-[0_4px_40px_0px_rgba(104,102,234,0.24)]; 
+}
