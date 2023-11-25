@@ -8,16 +8,16 @@ const TabsContainer = () => {
   const [tabId, setTabId] = useState(1);
   const [posts, setPosts] = useState([
     { id: 0, post: "Новобранец", salary: 50, description: "от 10 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 1, post: "Новобранец", salary: 50, description: "от 11 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 2, post: "Новобранец", salary: 50, description: "от 12 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 3, post: "Новобранец", salary: 50, description: "от 13 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 4, post: "Новобранец", salary: 50, description: "от 14 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 5, post: "Новобранец", salary: 50, description: "от 15 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 6, post: "Новобранец", salary: 50, description: "от 16 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 7, post: "Новобранец", salary: 50, description: "от 17 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 8, post: "Новобранец", salary: 50, description: "от 18 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 9, post: "Новобранец", salary: 50, description: "от 19 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
-    { id: 10, post: "Новобранец", salary: 50, description: "от 20 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 1, post: "Рядовой", salary: 100, description: "11 заданий", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 2, post: "Сержант", salary: 80, description: "25 заданий", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 3, post: "Новобранец", salary: 40, description: "15 заданий", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 4, post: "Сержант", salary: 70, description: "10 заданийl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 5, post: "Новобранец", salary: 50, description: "10 заданий", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 6, post: "Рядовой", salary: 40, description: "20 заданий", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 7, post: "Сержант", salary: 100, description: "5 заданий", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 8, post: "Новобранец", salary: 130, description: "15 заданий", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 9, post: "Рядовой", salary: 70, description: "от 15 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
+    { id: 10, post: "Сержант", salary: 50, description: "от 120 lvl", t1: false, t2: false, t3: false, p1: false, p2: false, r1: false, r2: false, u1: false, u2: false },
   ]);
 
   const [selectedPostId, setSelectedPostId] = useState(0);
