@@ -1,19 +1,28 @@
 const Card = ({
+  id,
   post,
   salary,
   description,
   onDragStart,
   onDragEnter,
   onDragEnd,
+  selectedPostId,
+  setSelectedPostId,
 }) => {
+
+  const handleCardClick = () => {
+    setSelectedPostId(id)
+  }
+
   return (
     <div
       draggable
-      className="last:z-20 px-4 py-5 bg-black2 rounded-lg max-w-[296px] flex items-center gap-4 cursor-pointer hover:shadow-[4px_8px_40px_0px_rgba(0,0,0,0.4)]"
+      className={`${selectedPostId === id ? "border-2 border-violet" : ""} last:z-20 px-4 py-5 bg-black2 rounded-lg max-w-[296px] flex items-center gap-4 cursor-pointer hover:shadow-[4px_8px_40px_0px_rgba(0,0,0,0.4)]`}
       onDragStart={onDragStart}
       onDragEnter={onDragEnter}
       onDragEnd={onDragEnd}
       onDragOver={(e) => e.preventDefault()}
+      onClick={handleCardClick}
     >
       <span className="cursor-grab">
         <svg
@@ -32,10 +41,10 @@ const Card = ({
         </svg>
       </span>
 
-      <div className="flex justify-between w-full text-grey1">
+      <div className="flex justify-between w-full text-grey1 gap-2">
         <div>
-          <p className="text-sm leading-normal text-white">{post}</p>
-          <p className="text-xs leading-normal ">{description}</p>
+          <p className="text-sm leading-normal text-white max-w-[160px] overflow-auto no-scrollbar">{post}</p>
+          <p className="text-xs leading-normal max-w-[160px] overflow-auto no-scrollbar">{description}</p>
         </div>
 
         <span className="text-xs leading-normal">
